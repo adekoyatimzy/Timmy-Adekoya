@@ -7,7 +7,7 @@ body {
 	background-color: #000;
 	font-family: Verdana, Geneva, sans-serif;
 	line-height: 1.6;
-	font-size: 24px;
+	font-size: 2.5vh;
 }
 
 #Menubar {
@@ -117,7 +117,7 @@ body {
 }
 
 #Logo, #Photo, #website, ProductdesignProject {
-	font-size: 24px;
+	font-size: 2.5vh;
 	min-height: 17.5vh;
 }
 
@@ -355,7 +355,7 @@ ul.skill-list {
 
 #Welcome #paragraph p {
     text-align: left;
-    font-size: 2.1vh;
+    font-size: 2.5vh;
     line-height: 1.6;
     color: #FC0;
     margin: 0;
@@ -406,7 +406,7 @@ ul.skill-list {
 
     #Welcome #paragraph p {
         text-align: center; 
-        font-size: 2.2vh;
+        font-size: 2.5vh;
         line-height: 1.5;
     }
 
