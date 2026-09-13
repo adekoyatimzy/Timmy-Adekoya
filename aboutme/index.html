@@ -66,13 +66,16 @@ body {
   <p>My Contact Details</p>
   <li>Email Address: adekoyatimzy@gmail.com </li>
 	
-<form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 10px; max-width: 100%; margin-top: 20px;">
+<form action="https://web3forms.com" method="POST" style="display: flex; flex-direction: column; gap: 10px; max-width: 100%; margin-top: 20px;">
   
+  <!-- This links the form safely to your email address -->
+  <input type="hidden" name="access_key" value="ea762bf6-fcab-4df2-ac01-c8ef6722d7d8">
+
   <label for="name" style="color: #333;">Name:</label>
   <input type="text" id="name" name="name" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;">
 
   <label for="email" style="color: #333;">Email Address:</label>
-  <input type="email" id="email" name="_replyto" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;">
+  <input type="email" id="email" name="email" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;">
 
   <label for="message" style="color: #333;">Message:</label>
   <textarea id="message" name="message" rows="4" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px; resize: vertical;"></textarea>
@@ -81,6 +84,7 @@ body {
     Send Message
   </button>
 </form>
+
 
 	</div>
  
