@@ -85,6 +85,8 @@ body {
 	background-color: #333;
 	box-sizing: border-box;
 	margin: 0;
+	font-size: 2.5vh;
+	min-height: 17.5vh;
 }
 
 .profile-pic {
@@ -114,11 +116,6 @@ body {
 	font-size: 24px;
 	background-color: #333333;
 	min-height: 100vh;
-}
-
-#Logo, #Photo, #website, ProductdesignProject {
-	font-size: 2.5vh;
-	min-height: 17.5vh;
 }
 
 #CV {
