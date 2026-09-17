@@ -85,7 +85,7 @@ body {
 	background-color: #333;
 	box-sizing: border-box;
 	margin: 0;
-	font-size: 2.5vh;
+	font-size: 2vh;
 	min-height: 17.5vh;
 }
 
@@ -121,7 +121,7 @@ body {
 #CV {
 	background-color: #333;
 	color: #FC0;
-	font-size: 2.5vh;
+	font-size: 2vh;
 }
 
 #Welcome h2 {
@@ -352,7 +352,7 @@ ul.skill-list {
 
 #Welcome #paragraph p {
     text-align: left;
-    font-size: 2.5vh;
+    font-size: 2vh;
     line-height: 1.6;
     color: #FC0;
     margin: 0;
@@ -396,14 +396,14 @@ ul.skill-list {
     }
 
     #Welcome h2 {
-        font-size: 2.6vh;
+        font-size: 3vh;
         text-align: center;
         margin-bottom: 2vh;
     }
 
     #Welcome #paragraph p {
         text-align: center; 
-        font-size: 2.5vh;
+        font-size: 2vh;
         line-height: 1.5;
     }
 
