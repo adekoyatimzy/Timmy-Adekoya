@@ -169,7 +169,7 @@ ul {
 	display: inline-block;
 }
 
-.edu-split {
+.edu-split, .downloadsplit {
     display: flex;
     gap: 20px;
 }
