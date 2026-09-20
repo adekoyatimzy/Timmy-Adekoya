@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* Timmy used AI */
 body {
 	margin: 0;
 	padding: 0;
@@ -80,7 +79,7 @@ body {
 
 .Contentarea {
 	color: #FC0;
-	padding: 6vh 10% 3vh 10%;
+	padding: 10vh 10% 3vh 10%;
 	line-height: 2.5;
 	background-color: #333;
 	box-sizing: border-box;
