@@ -36,7 +36,6 @@ body {
 	flex-wrap: nowrap;
 }
 
-/* Keep the text on the left and the contact form on the right. */
 #aboutme .paragraph {
 	order: 1;
 }
@@ -45,8 +44,7 @@ body {
 	order: 2;
 }
 
-.contact-info,
-.paragraph {
+.contact-info, .paragraph {
 	flex: 1.5;
 	font-weight: bold;
 	min-width: 0;
@@ -60,7 +58,6 @@ body {
 	padding-right: 20px;
 }
 
-/* On phones, stack the contact form below the about-me text. */
 @media screen and (max-width: 600px) {
 	#aboutme {
 		flex-direction: column;
@@ -71,8 +68,7 @@ body {
 		padding: 8vh 8vw;
 	}
 
-	#aboutme .paragraph,
-	#aboutme .contact-info {
+	#aboutme .paragraph, #aboutme .contact-info {
 		order: initial;
 		width: 100%;
 		box-sizing: border-box;
