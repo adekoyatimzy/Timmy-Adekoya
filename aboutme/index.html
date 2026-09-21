@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Timmy's Website</title>
 <link rel="icon" type="image/x-icon" href="../files/logo.png" />
@@ -10,13 +10,13 @@
 <style>
 body {
 	background-color:#333;
-	
 }
+
 #Menubar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000; 
+	z-index: 1000;
 }
 
 #aboutme {
@@ -35,16 +35,56 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
-.contact-info {
-	flex: 1.5;
-	font-weight: bold;
+
+/* Keep the text on the left and the contact form on the right. */
+#aboutme .paragraph {
+	order: 1;
 }
+
+#aboutme .contact-info {
+	order: 2;
+}
+
+.contact-info,
 .paragraph {
 	flex: 1.5;
 	font-weight: bold;
+	min-width: 0;
+}
+
+.contact-info {
+	padding-left: 20px;
+}
+
+.paragraph {
+	padding-right: 20px;
+}
+
+/* On phones, stack the contact form below the about-me text. */
+@media screen and (max-width: 600px) {
+	#aboutme {
+		flex-direction: column;
+		columns: 1;
+		column-width: auto;
+		column-gap: 0;
+		column-rule: none;
+		padding: 8vh 8vw;
+	}
+
+	#aboutme .paragraph,
+	#aboutme .contact-info {
+		order: initial;
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#aboutme .contact-info {
+		margin-top: 30px;
+	}
 }
 </style>
-
 </head>
 
 <body>
@@ -60,36 +100,31 @@ body {
     </div>
 </div>
 
-
 <div class="Contentarea" id="aboutme">
-<div class="contact-info"> 
-		<h1><strong>About Me...  </strong></h1>
-  <p>My Contact Details</p>
-  <li>Email Address: adekoyatimzy@gmail.com </li>
-	
-<form id="contactForm" style="display: flex; flex-direction: column; gap: 10px; max-width: 100%; margin-top: 20px;">
-  
-  <input type="hidden" name="access_key" value="300d8905-3df0-499e-854d-b1a9be82e84c">
+  <div class="contact-info">
+    <h1><strong>About Me...</strong></h1>
+    <p>My Contact Details</p>
+    <li>Email Address: adekoyatimzy@gmail.com</li>
 
-  <label for="name" style="color: #333;">Name:</label>
-  <input type="text" id="name" name="name" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;">
+    <form id="contactForm" style="display: flex; flex-direction: column; gap: 10px; max-width: 100%; margin-top: 20px;">
+      <input type="hidden" name="access_key" value="300d8905-3df0-499e-854d-b1a9be82e84c" />
 
-  <label for="email" style="color: #333;">Email Address:</label>
-  <input type="email" id="email" name="email" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;">
+      <label for="name" style="color: #333;">Name:</label>
+      <input type="text" id="name" name="name" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;" />
 
-  <label for="message" style="color: #333;">Message:</label>
-  <textarea id="message" name="message" rows="4" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px; resize: vertical;"></textarea>
+      <label for="email" style="color: #333;">Email Address:</label>
+      <input type="email" id="email" name="email" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px;" />
 
-  <button type="submit" id="submitBtn" style="background-color: #333; color: #FC0; border: none; padding: 10px; margin-top: 5px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 16px;">
-    Send Message
-  </button>
-  <p id="formStatus" style="font-weight: bold; display: none; color: #333; margin-top: 5px;"></p>
-</form>
+      <label for="message" style="color: #333;">Message:</label>
+      <textarea id="message" name="message" rows="4" required style="padding: 8px; border: 2px solid #333; background: transparent; border-radius: 4px; resize: vertical;"></textarea>
 
-	</div>
- 
+      <button type="submit" id="submitBtn" style="background-color: #333; color: #FC0; border: none; padding: 10px; margin-top: 5px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 16px;">Send Message</button>
+      <p id="formStatus" style="font-weight: bold; display: none; color: #333; margin-top: 5px;"></p>
+    </form>
+  </div>
+
   <div class="paragraph">
-	  <p>Hello, I'm Timmy Adekoya. I'm currently studying A Levels and a BTEC at Sweyne Park School, with a strong interest in architecture. I'm friendly and sociable, and I enjoy dancing, music, drawing, and writing. I also have experience using music technology through my church. My passion for architecture grew from my love of drawing, which continues to inspire my creativity.</p>
+    <p>Hello, I'm Timmy Adekoya. I'm currently studying A Levels and a BTEC at Sweyne Park School, with a strong interest in architecture. I'm friendly and sociable, and I enjoy dancing, music, drawing and creative design. I am eager to develop my skills and gain experience in the built and visual environments.</p>
   </div>
 </div>
 
@@ -99,7 +134,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   var form = this;
   var btn = document.getElementById('submitBtn');
   var status = document.getElementById('formStatus');
-  
+
   btn.disabled = true;
   btn.innerText = 'Sending...';
   status.style.display = 'block';
@@ -124,7 +159,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
       status.innerText = 'Something went wrong. Please try again.';
     }
   })
-  .catch(function(error) {
+  .catch(function() {
     status.style.color = 'red';
     status.innerText = 'Error sending message. Please try again.';
   })
