@@ -433,5 +433,36 @@ ul.skill-list {
 		padding: 7px 4px;
 		font-size: 11px;
 	}
+
+	#CV {
+		padding: 10vh 5% 3vh 5%;
+	}
+
+	ul.skill-list {
+		display: flex;
+		margin-bottom: 12.5px;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 5px;
+		padding-left: 10px;
+	}
+
+	.edu-split, .downloadsplit {
+	    display: flex;
+	    gap: 10px;
+	}
+	
+	.edu-left, .title {
+		width: 50%;
+	    padding-right: 10px;
+	    border-right: 1.5px solid #FC0;
+	}
+	
+	.edu-right, .cvpdf {
+		width: 50%;
+	    padding-left: 10px;
+		padding:15px;
+	}
+	
 }
 	
