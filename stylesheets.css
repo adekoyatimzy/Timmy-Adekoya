@@ -410,7 +410,7 @@ ul.skill-list {
     #Welcome .profile-pic {
         width: 30vh;  
         height: 30vh; 
-        margin: 0 auto; 
+        margin: 0 auto;
         border: 0.5vh solid #FC0;
         box-shadow: 0 1.5vh 3vh rgba(0,0,0,0.4);
     }
