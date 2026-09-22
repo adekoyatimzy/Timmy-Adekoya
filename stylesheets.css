@@ -402,7 +402,7 @@ ul.skill-list {
     }
 
     #Welcome #paragraph p {
-        text-align: center; 
+        text-align: justify; 
         font-size: 2vh;
         line-height: 1.5;
     }
