@@ -416,9 +416,22 @@ ul.skill-list {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
 	#Menubar {
-		font-size: 1.5vh;
+		padding: 6px;
+	}
+
+	#Menubar a.logo img {
+		width: 42px !important;
+	}
+
+	.menulinks-wrapper {
+		gap: 1px;
+	}
+
+	#Menubar a:not(.logo) {
+		padding: 7px 4px;
+		font-size: 11px;
 	}
 }
 	
